@@ -1,4 +1,20 @@
 @use '@/app/scss/useMain' as *;
 @use './styles';
 
-// Basic selectors here
+.copyrightsFooter__content {
+    text-align: center;
+
+    @include mq(tablet) {
+        text-align: left;
+    }
+}
+
+.copyrightsFooter__paragraph {
+    color: hsla(0, 0%, 0%, 0.6);
+
+    &Link {
+        color: inherit;
+        text-decoration: underline !important;
+        text-underline-offset: 4px;
+    }
+}
