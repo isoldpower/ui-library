@@ -3,26 +3,27 @@ import {Suspense} from "react";
 import {App} from "@/app/App";
 import {HomeLazy} from "@/pages/landing";
 
-const defaultFallback = <div>Loading...</div>
+const defaultFallback = <div>Loading...</div>;
 
 const routes = [
-    {
-        path: '/',
-        element:
-            <Suspense fallback={defaultFallback}>
-                <App/>
-            </Suspense>,
-        children: [
-            {
-                path: '/',
-                element: (
-                    <Suspense fallback={defaultFallback}>
-                        <HomeLazy />
-                    </Suspense>
-                )
-            }
-        ]
-    }
+	{
+		path: "/",
+		element: (
+			<Suspense fallback={defaultFallback}>
+				<App/>
+			</Suspense>
+		),
+		children: [
+			{
+				path: "/",
+				element: (
+					<Suspense fallback={defaultFallback}>
+						<HomeLazy/>
+					</Suspense>
+				)
+			}
+		]
+	}
 ];
 
 export const router = createBrowserRouter(routes);

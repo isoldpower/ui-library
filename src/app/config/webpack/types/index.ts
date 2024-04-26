@@ -1,1 +1,1 @@
-export {BuildOptions, BuildPaths, BuildMode} from './types';
+export {BuildOptions, BuildPaths, BuildMode} from "./types";

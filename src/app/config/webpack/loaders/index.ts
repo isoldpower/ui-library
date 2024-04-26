@@ -1,4 +1,4 @@
-export {buildTypescriptLoader} from './buildTypescriptLoader';
+export {buildTypescriptLoader} from "./buildTypescriptLoader";
 export {buildAssetLoader} from "./buildAssetLoader";
 export {buildSvgLoader} from "./buildSvgLoader";
 export {buildModulesLoader} from "./buildModulesLoader";
