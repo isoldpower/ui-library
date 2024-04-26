@@ -1,0 +1,24 @@
+@use '@/app/scss/useMain' as *;
+@use './styles';
+
+.header__wrapper {
+    height: $header-height;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    gap: $size-10;
+}
+
+.header__separator {
+    display: flex;
+    height: 100%;
+
+    & > hr {
+        height: 100%;
+        border: 0.5px solid black;
+    }
+}
