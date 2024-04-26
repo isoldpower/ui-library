@@ -1,4 +1,7 @@
 @use '@/app/scss/useMain' as *;
 @use './styles';
 
-// Basic selectors here
+.navigationHeader__route {
+    font-size: 0.875rem;
+    color: rgba(0, 0, 0, 0.6)
+}

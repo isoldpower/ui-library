@@ -2,15 +2,20 @@
 @use './styles';
 
 .header__wrapper {
-    height: $header-height;
+    min-height: $header-height;
+    width: 100%;
+
     display: flex;
-    border-bottom: 1px solid black;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid hsla(240, 5.9%, 90%, 0.4);
 }
 
 .header__content {
     display: flex;
     align-items: center;
-    gap: $size-10;
+    max-width: 1400px;
+    gap: $size-7;
 }
 
 .header__separator {
@@ -21,4 +26,12 @@
         height: 100%;
         border: 0.5px solid black;
     }
+}
+
+.header__logo {
+    flex-grow: 0;
+}
+
+.header__children {
+    flex-grow: 1;
 }
