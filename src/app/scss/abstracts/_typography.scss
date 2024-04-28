@@ -1,25 +1,29 @@
-$manrope-font: "Manrope", sans-serif;
+$geist-font: "geist", sans-serif;
 
 $font-sizes: (
         "mobile": (
-                "700": 3.375rem,
-                "600": 3.375rem,
-                "500": 1.875rem,
-                "400": 2rem,
+                "1000": 1.875rem,
+                "900": 1rem,
+                "800": 1rem,
+                "700": 1rem,
+                "600": 1rem,
+                "500": 1rem,
+                "400": 1.25rem,
                 "300": 1.125rem,
                 "200": 0.875rem,
-                "100": 0.875rem,
-                "050": 0.8125rem
+                "100": 0.75rem,
         ),
         "tablet": (
-                "700": 5.875rem,
-                "600": 4rem,
-                "500": 2.5rem,
-                "400": 2rem,
-                "300": 1.5rem,
-                "200": 1.0625rem,
-                "100": 0.875rem,
-                "050": 0.9375rem
+                "1000": 3rem,
+                "900": 1rem,
+                "800": 1rem,
+                "700": 1rem,
+                "600": 1rem,
+                "500": 1rem,
+                "400": 1.25rem,
+                "300": 1.125rem,
+                "200": 0.875rem,
+                "100": 0.75rem,
         ),
 );
 
@@ -31,6 +35,9 @@ $font-size-400: var(--fs-400);
 $font-size-500: var(--fs-500);
 $font-size-600: var(--fs-600);
 $font-size-700: var(--fs-700);
+$font-size-800: var(--fs-800);
+$font-size-900: var(--fs-900);
+$font-size-1000: var(--fs-1000);
 
 $-fw-400: 400;
 $-fw-500: 500;

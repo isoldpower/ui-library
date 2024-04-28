@@ -1,3 +1,4 @@
 import Logo from './logo.svg';
+import Github from './github.svg';
 
-export {Logo};
+export {Logo, Github};

@@ -1,4 +1,14 @@
 @use '@/app/scss/useMain' as *;
 @use './styles';
 
-// Basic selectors here
+.homePage__ctaPlaceholder {
+    border-radius: 0.5rem;
+    width: 219px;
+    height: 28px;
+    background-color: hsl(240, 4.8%, 95.9%);
+}
+
+.homePage__showcase {
+    height: 700px;
+    background-color: hsl(240, 4.8%, 95.9%);
+}

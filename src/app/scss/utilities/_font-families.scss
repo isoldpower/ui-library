@@ -2,7 +2,11 @@
 
 .#{$prefix} {
     &ff-body {
-        font-family: $manrope-font;
+        font-family: $body-font-family;
+    }
+
+    &ff-header {
+        font-family: $header-font-family;
     }
 
     &ff-heading {

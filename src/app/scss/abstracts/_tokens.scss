@@ -19,28 +19,32 @@ $color-border-1: $color-neutral-050;
 // set to 0 to disable
 $letter-spacing-loose: 0;
 
-$border-radius-1: 32px;
+$border-radius-1: 1px;
+$border-radius-2: 1px;
+$border-radius-3: 1px;
 
 $box-shadow-1: 5px 5px 20px rgba(0, 0, 0, 0.1);
+$box-shadow-2: 5px 5px 20px rgba(0, 0, 0, 0.1);
+$box-shadow-3: 5px 5px 20px rgba(0, 0, 0, 0.1);
+$box-shadow-4: 5px 5px 20px rgba(0, 0, 0, 0.1);
+$box-shadow-5: 5px 5px 20px rgba(0, 0, 0, 0.1);
 
 // body
-$body-font-family: $manrope-font;
-$body-font-size: $font-size-200;
-$body-line-height: 150%;
+$body-font-family: $geist-font;
+$body-font-size: $font-size-300;
+$body-line-height: 1;
 $body-font-weight: $font-weight-default;
 $body-text-color: $color-text-default;
 $body-background-color: $color-neutral-000;
 
 //header
-$header-font-family: $manrope-font;
+$header-font-family: $geist-font;
 $header-line-height: 100%;
 $header-font-size: $font-size-200;
-$header-height: 3.5rem;
 $header-font-weight: $font-weight-default;
-$header-color: $body-background-color;
 
 //heading
-$heading-font-family: $manrope-font;
+$heading-font-family: $geist-font;
 $heading-color-default: $color-text-default;
 $heading-font-weight: $font-weight-default;
 $heading-letter-spacing: $letter-spacing-loose;
@@ -50,20 +54,20 @@ $heading-text-transform: none;
 //heading 1
 $heading-1-color: $heading-color-default;
 $heading-1-font-family: $heading-font-family;
-$heading-1-font-size: $font-size-700;
+$heading-1-font-size: $font-size-1000;
 
 //heading 2
 $heading-2-color: $heading-color-default;
 $heading-2-font-family: $heading-font-family;
-$heading-2-font-size: $font-size-600;
+$heading-2-font-size: $font-size-900;
 
 //heading 3
 $heading-3-color: $heading-color-default;
 $heading-3-font-family: $heading-font-family;
-$heading-3-font-size: $font-size-500;
+$heading-3-font-size: $font-size-800;
 
 //button
-$button-font-family: $manrope-font;
+$button-font-family: $geist-font;
 $button-font-weight: $font-weight-default;
 $button-border-radius: $border-radius-1;
 $button-line-height: 100%;
