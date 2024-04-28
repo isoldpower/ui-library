@@ -1,0 +1,50 @@
+@use '@/app/scss/useMain' as *;
+@use './styles';
+
+.announceHero__ctaLoading,
+.announceHero__ctaError,
+.announceHero__cta {
+    border-radius: 0.5rem;
+    width: 219px;
+    height: 28px;
+}
+
+.announceHero__cta {
+    background-color: hsl(240, 4.8%, 95.9%);
+}
+
+.announceHero__heading {
+    font-weight: $font-weight-bold;
+
+    @include mq(tablet) {
+        line-height: 1.1;
+    }
+}
+
+.announceHero__paragraph {
+    display: inline-block;
+    max-width: 750px;
+    text-wrap: balance;
+    line-height: 1.75rem;
+    font-weight: 300;
+}
+
+.announceHero__buttonIcon {
+    margin-top: 2px;
+}
+
+.announceHero__ctaLoading,
+.announceHero__headingLoading,
+.announceHero__paragraphLoading {
+    border-radius: 0.5rem;
+    background-color: hsl(37, 100%, 89%);
+    color: transparent;
+}
+
+.announceHero__ctaError,
+.announceHero__headingError,
+.announceHero__paragraphError {
+    border-radius: 0.5rem;
+    background-color: hsl(351, 100%, 92%);
+    color: transparent;
+}

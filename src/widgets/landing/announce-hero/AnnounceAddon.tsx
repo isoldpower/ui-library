@@ -1,5 +1,5 @@
 import {FC, ReactNode} from "react";
-import classes from "@/widgets/landing/announce-hero/AnnounceHero.module.scss";
+import classes from "@/widgets/landing/announce-hero/Announce.module.scss";
 import {ElementFx} from "@/features/landing/element-fx/ElementFx";
 
 interface AnnounceAddonProps {
@@ -12,7 +12,9 @@ export const AnnounceAddon: FC<AnnounceAddonProps> = (props: AnnounceAddonProps)
 
     return (
         <ElementFx errorFallback={errorElement} fetchFallback={fetchingElement}>
-            {props.children}
+            <div className={`${classes.announceHero__cta}`}>
+                {props.children}
+            </div>
         </ElementFx>
     )
 };

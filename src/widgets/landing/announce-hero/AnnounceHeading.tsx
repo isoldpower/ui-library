@@ -1,5 +1,5 @@
 import {FC, ReactNode} from "react";
-import classes from "../AnnounceHero.module.scss";
+import classes from "./Announce.module.scss";
 import '@/app/scss/main.scss';
 import {ElementFx} from "@/features/landing/element-fx/ElementFx";
 
