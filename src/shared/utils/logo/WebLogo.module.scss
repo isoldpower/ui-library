@@ -1,0 +1,7 @@
+@use '@/app/scss/useMain' as *;
+@use 'styles/index';
+
+.webLogo__wrapper > span {
+    font-weight: bold;
+    font-size: 1rem;
+}

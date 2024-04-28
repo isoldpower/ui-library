@@ -1,0 +1,10 @@
+@use '@/app/scss/useMain' as *;
+@use './styles';
+
+.headerNavLink__active {
+    color: rgba(0, 0, 0, 0.8)
+}
+
+.headerNavLink__pending {
+    color: rgba(0, 0, 0, 0.3)
+}

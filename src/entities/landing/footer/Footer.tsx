@@ -8,10 +8,10 @@ interface FooterProps extends BaseHTMLAttributes<HTMLDivElement> {
 
 export const Footer: FC<FooterProps> = ({className, children, ...props}: FooterProps) => {
 	return (
-		<div className={`${classes.footer__wrapper} ${className} ul-px-9 ul-py-6`} {...props}>
+		<div className={`${classes.footer__wrapper} ${className} ul-py-6 ul-tablet-py-0`} {...props}>
 			<div className={`${classes.footer__content}`}>
 				{Children.toArray(children).map((child, key) => (
-					<div key={key}>{child}</div>
+					<div key={key} className={`${classes.footer__child}`}>{child}</div>
 				))}
 			</div>
 		</div>

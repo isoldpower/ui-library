@@ -1,13 +1,13 @@
 import classes from "@/app/App.module.scss";
 import {Outlet} from "react-router-dom";
 import {NavigationHeader} from "@/widgets/landing/navigation-header/NavigationHeader";
-import {RightsFooter} from "@/widgets/landing/RightsFooter/RightsFooter";
+import {CopyrightsFooter} from "@/widgets/landing/copyrights-footer/CopyrightsFooter";
 
 export const App = () => {
 
 	return (
 		<>
-			<header className={`${classes.app__header}`}>
+			<header className={`${classes.app__header}`} style={{zIndex: 99, position: 'sticky', top: 0}}>
 				<NavigationHeader />
 				<div className={`${classes.app__headerModals}`} />
 			</header>
@@ -19,7 +19,7 @@ export const App = () => {
 				<div className={`${classes.app__notifications}`} />
 			</main>
 			<footer className={`${classes.app__footer}`}>
-				<RightsFooter />
+				<CopyrightsFooter />
 			</footer>
 		</>
 	);
