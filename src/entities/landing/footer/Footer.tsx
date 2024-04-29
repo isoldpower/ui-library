@@ -11,7 +11,7 @@ export const Footer: FC<FooterProps> = ({className, children, ...props}: FooterP
 		<div className={`${classes.footer__wrapper} ${className} ul-py-6 ul-tablet-py-0`} {...props}>
 			<div className={`${classes.footer__content}`}>
 				{Children.toArray(children).map((child, key) => (
-					<div key={key} className={`${classes.footer__child}`}>{child}</div>
+					<div className={`${classes.footer__child}`} key={key}>{child}</div>
 				))}
 			</div>
 		</div>

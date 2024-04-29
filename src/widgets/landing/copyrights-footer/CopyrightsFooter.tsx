@@ -14,9 +14,9 @@ export const CopyrightsFooter: FC<RightsFooterProps> = () => {
 				<ErrorBoundary fallback='Error loading credentials...'>
 					<p className={`${classes.copyrightsFooter__paragraph}`}>
 						Built by&nbsp;
-						<a className={`${classes.copyrightsFooter__paragraphLink}`} href='https://github.com/isoldpower' target='_blank'>isoldpower</a>.
+						<a className={`${classes.copyrightsFooter__paragraphLink}`} href='https://github.com/isoldpower' rel="noreferrer" target='_blank'>isoldpower</a>.
 						The source code is available on&nbsp;
-						<a className={`${classes.copyrightsFooter__paragraphLink}`} href='https://github.com/isoldpower/ui-library' target='_blank'>GitHub</a>.
+						<a className={`${classes.copyrightsFooter__paragraphLink}`} href='https://github.com/isoldpower/ui-library' rel="noreferrer" target='_blank'>GitHub</a>.
 					</p>
 				</ErrorBoundary>
 			</Footer>

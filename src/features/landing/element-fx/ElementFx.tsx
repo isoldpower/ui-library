@@ -8,11 +8,11 @@ interface ElementFxProps {
     fetchFallback: ReactNode;
 }
 
-export const ElementFx: FC<ElementFxProps> = (props: ElementFxProps) => {
+export const ElementFx: FC<ElementFxProps> = ({...elements}: ElementFxProps) => {
     return (
-        <ErrorBoundary fallback={props.errorFallback}>
-            <Suspense fallback={props.fetchFallback}>
-                {props.children}
+        <ErrorBoundary fallback={elements.errorFallback}>
+            <Suspense fallback={elements.fetchFallback}>
+                {elements.children}
             </Suspense>
         </ErrorBoundary>
     );

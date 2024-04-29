@@ -6,14 +6,14 @@ interface AnnounceAddonProps {
     children: ReactNode;
 }
 
-export const AnnounceAddon: FC<AnnounceAddonProps> = (props: AnnounceAddonProps) => {
+export const AnnounceAddon: FC<AnnounceAddonProps> = ({children}: AnnounceAddonProps) => {
     const fetchingElement = <div className={`${classes.announceHero__ctaLoading}`}/>
     const errorElement = <div className={`${classes.announceHero__ctaError}`}/>
 
     return (
         <ElementFx errorFallback={errorElement} fetchFallback={fetchingElement}>
             <div className={`${classes.announceHero__cta}`}>
-                {props.children}
+                {children}
             </div>
         </ElementFx>
     )

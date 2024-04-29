@@ -14,5 +14,4 @@ type ExplicitButton = {
     asChild: true;
 } & BaseHTMLAttributes<HTMLElement>;
 
-export type ButtonProps = {
-} & ButtonData & (DefaultButton | ExplicitButton)
+export type ButtonProps = ButtonData & (DefaultButton | ExplicitButton);
