@@ -5,6 +5,7 @@ import {Button} from "@/shared/ui-toolkit";
 import {Github} from "@/shared/icon-library";
 import {PageHero} from "@/entities/landing/page-hero/PageHero";
 import {AnnounceAddon, AnnounceHeading, AnnounceParagraph} from "@/widgets/landing";
+import {Link} from "react-router-dom";
 
 interface HomePageProps {
 }
@@ -24,13 +25,13 @@ const HomePage: FC<HomePageProps> = () => {
 				</AnnounceParagraph>
 				<div className='ul-flex ul-gap-4 ul-py-4 ul-tablet-pb-10'>
 					<Button asChild variant='primary'>
-						<a href='/not-yet'>Get Started</a>
+						<Link to='/not-yet'>Get Started</Link>
 					</Button>
-					<Button variant='secondary'>
-						<div className='ul-flex ul-align-items-center ul-justify-content-center'>
+					<Button asChild variant='secondary'>
+						<Link to='/not-yet' target='_blank' className='ul-flex ul-align-items-center ul-justify-content-center'>
 							<Github className="absolute-center ul-mr-2" height={16} width={16}/>
 							<span className={`${classes.announceHero__buttonIcon}`}>GitHub</span>
-						</div>
+						</Link>
 					</Button>
 				</div>
 			</PageHero>

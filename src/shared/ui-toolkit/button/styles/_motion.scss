@@ -1,6 +1,12 @@
-@use '@/app/scss/useMain' as *;
+@use "@/app/scss/useMain" as *;
 
 .button {
     will-change: color, background-color, box-shadow, border-color, fill, stroke, text-decoration-color;
     transition: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover {
+    background-color: var(--_hover-background);
+    color: var(--_hover-color);
+    text-decoration: var(--_hover-decoration) !important;
 }

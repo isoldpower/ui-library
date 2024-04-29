@@ -5,61 +5,64 @@
     line-height: 1;
     font-size: 0.875rem;
     font-weight: 500;
+    text-underline-offset: 4px;
 }
 
 .button {
+    --_background-color: var(--background-color, var(--extra-background));
+    --_hover-background: var(--hover-background, transparent);
+    --_box-shadow: var(--box-shadow, none);
+    --_color: var(--color, var(--extra-foreground));
+    --_hover-color: var(--hover-color, var(--extra-accent-foreground));
+    --_border: var(--border, none);
+    --_hover-decoration: var(--hover-decoration, none);
+
     white-space: nowrap;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
     height: $size-9;
     padding: $size-2 $size-4;
     border-radius: calc(0.5rem - 2px);
+
+    color: var(--_color);
+    background-color: var(--_background-color);
+    box-shadow: var(--_box-shadow);
+    border: var(--_border);
 }
 
 .button[itemType='primary'] {
-    background-color: $color-neutral-1000;
-    color: $color-neutral-000;
-
-    &:hover {
-        background-color: $color-neutral-950;
-    }
+    --background-color: hsl(var(--extra-primary));
+    --color: hsl(var(--extra-primary-foreground));
+    --hover-background: hsl(var(--extra-primary) / 0.9);
+    --hover-color: hsl(var(--extra-primary-foreground));
 }
 
 .button[itemtype='secondary'] {
-    background-color: hsl(240, 4.8%, 95.9%);
-    color: $color-neutral-1000;
+    --box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --background-color: hsl(var(--extra-secondary));
+    --color: hsl(var(--extra-secondary-foreground));
+    --hover-background: hsl(var(--extra-secondary) / 0.8);
+    --hover-color: hsl(var(--extra-secondary-foreground));
+}
 
-    &:hover {
-        background-color: hsla(240, 4.8%, 95.9%, 0.8);
-        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    }
+.button[itemtype='destructive'] {
+    --background-color: hsl(var(--extra-destructive));
+    --color: hsl(var(--extra-destructive-foreground));
+    --hover-background: hsl(var(--extra-destructive) / 0.9);
+    --hover-color: hsl(var(--extra-destructive-foreground));
 }
 
 .button[itemType='outline'] {
-    border: 1px solid hsl(240, 5.9%, 90%);
-
-    &:hover {
-        background-color: hsl(240, 4.8%, 95.9%);
-        box-shadow: 0 1px 2px 0 rgba(0,0,0,.05)
-    }
+    --border: 1px solid hsl(var(--extra-input));
+    --hover-background: hsl(var(--extra-accent));
 }
 
 .button[itemType='ghost'] {
-    border: none;
-
-    &:hover {
-        background-color: hsl(240, 4.8%, 95.9%);
-        box-shadow: 0 1px 2px 0 rgba(0,0,0,.05)
-    }
+    --hover-background: hsl(var(--extra-accent));
+    --hover-color: hsl(var(--extra-accent-foreground));
 }
 
 .button[itemType='link'] {
-    border: none;
-
-    &:hover {
-        text-decoration: underline !important;
-        text-underline-offset: 4px;
-    }
+    --hover-decoration: underline;
 }

@@ -53,6 +53,27 @@ $light: (
                 '900': $-clr-mountain-meadow-900,
                 '950': $-clr-mountain-meadow-950,
         ),
+        "extra": (
+                'input': 240 5.9% 90%,
+                'border': 240 5.9% 90%,
+                'ring': 240 5% 64.9%,
+                'primary': 240 5.9% 10%,
+                'primary-foreground': 0 0% 98%,
+                'secondary': 240 4.8% 95.9%,
+                'secondary-foreground': 240 5.9% 10%,
+                'muted': 240 4.8% 95.9%,
+                'muted-foreground': 240 3.8% 46.1%,
+                'accent': 240 4.8% 95.9%,
+                'accent-foreground': 240 5.9% 10%,
+                'destructive': 0 72.22% 50.59%,
+                'destructive-foreground': 0 0% 98%,
+                'background': 0 0% 100%,
+                'foreground': 240 10% 3.9%,
+                'card': 0 0% 100%,
+                'card-foreground': 240 10% 3.9%,
+                'popover': 0 0% 100%,
+                'popover-foreground': 240 10% 3.9%
+        )
 );
 
 $dark: (
@@ -83,6 +104,27 @@ $dark: (
                 '800': $-clr-mountain-meadow-800,
                 '900': $-clr-mountain-meadow-900,
                 '950': $-clr-mountain-meadow-950,
+        ),
+        "extra": (
+                'input': 240 5.9% 90%,
+                'border': 240 5.9% 90%,
+                'ring': 240 5% 64.9%,
+                'primary': 240 5.9% 10%,
+                'primary-foreground': 0 0% 98%,
+                'secondary': 240 4.8% 95.9%,
+                'secondary-foreground': 240 5.9% 10%,
+                'muted': 240 4.8% 95.9%,
+                'muted-foreground': 240 3.8% 46.1%,
+                'accent': 240 4.8% 95.9%,
+                'accent-foreground': 240 5.9% 10%,
+                'destructive': 0 72.22% 50.59%,
+                'destructive-foreground': 0 0% 98%,
+                'background': 0 0% 100%,
+                'foreground': 240 10% 3.9%,
+                'card': 0 0% 100%,
+                'card-foreground': 240 10% 3.9%,
+                'popover': 0 0% 100%,
+                'popover-foreground': 240 10% 3.9%
         )
 );
 
@@ -112,3 +154,23 @@ $color-accent-700: var(--accent-700);
 $color-accent-800: var(--accent-800);
 $color-accent-900: var(--accent-900);
 $color-accent-950: var(--accent-950);
+
+$color-input: var(--extra-input);
+$color-border: var(--extra-border);
+$color-ring: var(--extra-ring);
+$color-primary: var(--extra-primary);
+$color-primary-foreground: var(--extra-primary-foreground);
+$color-secondary: var(--extra-secondary);
+$color-secondary-foreground: var(--extra-secondary-foreground);
+$color-muted: var(--extra-muted);
+$color-muted-foreground: var(--extra-muted-foreground);
+$color-accent: var(--extra-accent);
+$color-accent-foreground: var(--extra-accent-foreground);
+$color-destructive: var(--extra-destructive);
+$color-destructive-foreground: var(--extra-destructive-foreground);
+$color-background: var(--extra-background);
+$color-foreground: var(--extra-foreground);
+$color-card: var(--extra-card);
+$color-card-foreground: var(--extra-card-foreground);
+$color-popover: var(--extra-popover);
+$color-popover-foreground: var(--extra-popover-foreground);
