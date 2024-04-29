@@ -27,14 +27,12 @@
     }
 }
 
-.button[itemType='secondary'] {
+.button[itemtype='secondary'] {
+    background-color: hsl(240, 4.8%, 95.9%);
+    color: $color-neutral-000;
 
-}
-
-.button__transparentWrapper {
-    display: contents;
-
-    & > * {
-        @extend .button;
+    &:hover {
+        background-color: hsla(240, 4.8%, 95.9%, 0.8);
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     }
 }

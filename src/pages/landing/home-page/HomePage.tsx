@@ -3,11 +3,8 @@ import "@/app/scss/main.scss";
 import classes from "./HomePage.module.scss";
 import {Button} from "@/shared/ui-toolkit";
 import {Github} from "@/shared/icon-library";
-import {AnnounceAddon} from "@/widgets/landing/announce-hero/AnnounceAddon";
-import {AnnounceHeading} from "@/widgets/landing/announce-hero/AnnounceHeading";
 import {PageHero} from "@/entities/landing/page-hero/PageHero";
-import {AnnounceParagraph} from "@/widgets/landing/announce-hero/AnnounceParagraph";
-import {Link} from "react-router-dom";
+import {AnnounceAddon, AnnounceHeading, AnnounceParagraph} from "@/widgets/landing";
 
 interface HomePageProps {
 }
@@ -23,13 +20,13 @@ const HomePage: FC<HomePageProps> = () => {
 					Build your component library
 				</AnnounceHeading>
 				<AnnounceParagraph>
-					Beautifully designed components that you can copy and paste into your apps. Accessible.Customizable. Open Source.
+					Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.
 				</AnnounceParagraph>
 				<div className='ul-flex ul-gap-4 ul-py-4 ul-tablet-pb-10'>
 					<Button asChild variant='primary'>
-						<Link to='/not-yet'>Get Started</Link>
+						<a href='/not-yet'>Get Started</a>
 					</Button>
-					<Button variant='primary'>
+					<Button variant='secondary'>
 						<div className='ul-flex ul-align-items-center ul-justify-content-center'>
 							<Github className="absolute-center ul-mr-2" height={16} width={16}/>
 							<span className={`${classes.announceHero__buttonIcon}`}>GitHub</span>
