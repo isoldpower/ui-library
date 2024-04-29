@@ -1,6 +1,6 @@
 import {BaseHTMLAttributes, ButtonHTMLAttributes} from "react";
 
-type ButtonVariant = 'primary' | 'secondary';
+type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost' | 'link';
 
 type ButtonData = {
     variant?: ButtonVariant;
