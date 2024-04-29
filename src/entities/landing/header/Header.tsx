@@ -3,7 +3,7 @@ import "@/app/scss/main.scss";
 import classes from "./Header.module.scss";
 import {Link} from "react-router-dom";
 import {routePaths} from "@/shared/constants";
-import {Logo} from "@/shared/utils";
+import {Logo} from "@/shared/utilities";
 
 interface HeaderProps extends BaseHTMLAttributes<HTMLDivElement> {
     children: ReactNode;

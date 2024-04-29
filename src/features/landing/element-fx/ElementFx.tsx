@@ -1,6 +1,6 @@
 import {FC, ReactNode, Suspense} from "react";
 import '@/app/scss/main.scss';
-import {ErrorBoundary} from "@/shared/utils";
+import {ErrorBoundary} from "@/shared/utilities";
 
 interface ElementFxProps {
     children: ReactNode;

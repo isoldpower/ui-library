@@ -4,7 +4,7 @@ import classes from "./NavigationHeader.module.scss";
 import {Header} from "@/entities/landing";
 import {routePaths} from "@/shared/constants";
 import {HeaderLinkFx} from "@/features/landing";
-import {ErrorBoundary, List} from "@/shared/utils";
+import {ErrorBoundary, List} from "@/shared/utilities";
 
 
 interface NavigationHeaderProps {

@@ -1,3 +1,6 @@
 @use '@/app/scss/useMain' as *;
 
-// Interactions code
+.button {
+    will-change: color, background-color, box-shadow, border-color, fill, stroke, text-decoration-color;
+    transition: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}

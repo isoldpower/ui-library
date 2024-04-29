@@ -1,24 +1,8 @@
 @use '@/app/scss/useMain' as *;
 @use './styles';
 
-.homePage__heroWrapper {
-    max-width: 980px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-
-    padding-top: $size-8;
-    padding-bottom: $size-8;
-
-    @include mq(tablet) {
-        padding-top: $size-12;
-    }
-
-    @include mq(laptop) {
-        padding-bottom: calc(20 * 0.25rem);
-        padding-top: calc(24 * 0.25rem);
-    }
+.announceHero__buttonIcon {
+    margin-top: 2px;
 }
 
 .homePage__showcase {

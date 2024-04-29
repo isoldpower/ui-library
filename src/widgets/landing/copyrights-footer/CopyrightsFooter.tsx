@@ -2,7 +2,7 @@ import {FC} from "react";
 import "@/app/scss/main.scss";
 import classes from './CopyrightsFooter.module.scss';
 import {Footer} from "@/entities/landing";
-import {ErrorBoundary} from "@/shared/utils";
+import {ErrorBoundary} from "@/shared/utilities";
 
 interface RightsFooterProps {
 }

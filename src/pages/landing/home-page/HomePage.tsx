@@ -26,10 +26,12 @@ const HomePage: FC<HomePageProps> = () => {
 						Beautifully designed components that you can copy and paste into your apps. Accessible.Customizable. Open Source.
 					</AnnounceParagraph>
 					<div className='ul-flex ul-gap-4 ul-py-4 ul-tablet-pb-10'>
-						<Button variant='accent'>Get Started</Button>
-						<Button variant='secondary'>
-							<Github width={16} height={16} className="absolute-center ul-mr-2"/>
-							<span className={`${classes.announceHero__buttonIcon}`}>GitHub</span>
+						<Button semantic='link' variant='primary' to='/not-yet'>Get Started</Button>
+						<Button semantic='link' variant='primary' to='/not-yet' target='_blank'>
+							<div className='ul-flex ul-align-items-center ul-justify-content-center'>
+								<Github width={16} height={16} className="absolute-center ul-mr-2"/>
+								<span className={`${classes.announceHero__buttonIcon}`}>GitHub</span>
+							</div>
 						</Button>
 					</div>
 				</PageHero>

@@ -2,7 +2,7 @@ import {FC} from "react";
 import '@/app/scss/main.scss';
 import classes from './HeaderLinkFx.module.scss';
 import {LinkProps} from "react-router-dom";
-import {NavLink} from "@/shared/utils";
+import {NavLink} from "@/shared/utilities";
 
 interface HeaderNavLinkProps extends LinkProps {
     activeClassName?: string;
