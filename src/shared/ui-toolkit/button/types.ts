@@ -1,5 +1,4 @@
-import {LinkProps} from "react-router-dom";
-import {ButtonHTMLAttributes} from "react";
+import {BaseHTMLAttributes, ButtonHTMLAttributes} from "react";
 
 type ButtonVariant = 'primary' | 'secondary';
 
@@ -7,8 +6,13 @@ type ButtonData = {
     variant?: ButtonVariant;
 }
 
-export type ButtonProps = {
-} & ButtonData & (AnchorButton | FunctionButton)
+type DefaultButton = {
+    asChild?: false;
+} & ButtonHTMLAttributes<HTMLButtonElement>;
 
-type AnchorButton = {semantic: 'link', to: string} & LinkProps;
-type FunctionButton = {semantic: 'button'} & ButtonHTMLAttributes<HTMLButtonElement>;
+type ExplicitButton = {
+    asChild: true;
+} & BaseHTMLAttributes<HTMLElement>;
+
+export type ButtonProps = {
+} & ButtonData & (DefaultButton | ExplicitButton)

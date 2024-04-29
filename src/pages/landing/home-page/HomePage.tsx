@@ -7,6 +7,7 @@ import {AnnounceAddon} from "@/widgets/landing/announce-hero/AnnounceAddon";
 import {AnnounceHeading} from "@/widgets/landing/announce-hero/AnnounceHeading";
 import {PageHero} from "@/entities/landing/page-hero/PageHero";
 import {AnnounceParagraph} from "@/widgets/landing/announce-hero/AnnounceParagraph";
+import {Link} from "react-router-dom";
 
 interface HomePageProps {
 }
@@ -26,13 +27,15 @@ const HomePage: FC<HomePageProps> = () => {
 						Beautifully designed components that you can copy and paste into your apps. Accessible.Customizable. Open Source.
 					</AnnounceParagraph>
 					<div className='ul-flex ul-gap-4 ul-py-4 ul-tablet-pb-10'>
-						<Button semantic='link' variant='primary' to='/not-yet'>Get Started</Button>
-						<Button semantic='link' variant='primary' to='/not-yet' target='_blank'>
-							<div className='ul-flex ul-align-items-center ul-justify-content-center'>
-								<Github width={16} height={16} className="absolute-center ul-mr-2"/>
-								<span className={`${classes.announceHero__buttonIcon}`}>GitHub</span>
-							</div>
+						<Button asChild variant='primary'>
+							<Link to='/not-yet'>Get Started</Link>
 						</Button>
+						{/*<Button asChild={false} variant='primary'>*/}
+						{/*	<div className='ul-flex ul-align-items-center ul-justify-content-center'>*/}
+						{/*		<Github width={16} height={16} className="absolute-center ul-mr-2"/>*/}
+						{/*		<span className={`${classes.announceHero__buttonIcon}`}>GitHub</span>*/}
+						{/*	</div>*/}
+						{/*</Button>*/}
 					</div>
 				</PageHero>
 				<div className={`${classes.homePage__showcase} ul-width-1of1`}>
